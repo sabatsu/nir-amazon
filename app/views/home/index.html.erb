@@ -1,0 +1,5 @@
+<%= form_tag('/get_amazon_results', method: :post) do %>
+  <div>Search key: <%= search_field_tag :key %></div>
+  <div>Number of pages: <%= search_field_tag :amount %></div>
+  <div><%= submit_tag 'Send' %></div>
+<% end %>
